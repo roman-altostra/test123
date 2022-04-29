@@ -1,0 +1,20 @@
+{
+	"AWSTemplateFormatVersion": "2010-09-09",
+	"Transform": "AWS::Serverless-2016-10-31",
+	"Resources": {
+		"EventBridgeRule01": {
+			"Type": "AWS::Events::Rule",
+			"Properties": {
+				"EventPattern": {
+					"key": [
+						"value"
+					]
+				},
+				"Name": "myrule2Versionrf10tvb",
+				"Targets": [],
+				"EventBusName": "default"
+			}
+		}
+	},
+	"Outputs": {}
+}

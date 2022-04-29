@@ -1,0 +1,55 @@
+{
+	"id": "cl2kcndba0000s7sc7kua4nbu",
+	"name": "test",
+	"type": "altostra",
+	"description": "An empty project template",
+	"created": "2022-04-29T11:26:19.942Z",
+	"blueprints": [
+		{
+			"version": "2019-10-24",
+			"connections": {
+				"EventBridgeRule01": {
+					"BlabLa01": {
+						"type": "connection.event-bridge.event-bus",
+						"from": "EventBridgeRule01",
+						"to": "BlabLa01"
+					}
+				}
+			},
+			"resources": {
+				"BlabLa01": {
+					"type": "resource.external",
+					"name": "BlabLa",
+					"externalResourceType": "resource.event-bridge.event-bus",
+					"identifier": "default",
+					"id": "BlabLa01"
+				},
+				"EventBridgeRule01": {
+					"type": "resource.event-bridge.rule",
+					"name": "EventBridgeRule",
+					"ruleName": "myrule2",
+					"eventPattern": {
+						"key": [
+							"value"
+						]
+					},
+					"id": "EventBridgeRule01"
+				}
+			},
+			"metadata": {
+				"designer": {
+					"resourcePositions": {
+						"BlabLa01": {
+							"x": 155.71563720703125,
+							"y": 215.42501831054688,
+							"z": 0
+						}
+					}
+				}
+			},
+			"id": "cl2kcndba0000s7sc7kua4nbu",
+			"name": "test",
+			"unsafe": false
+		}
+	]
+}
